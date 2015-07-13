@@ -72,6 +72,13 @@ hL = legend('h=2m','h=4m','h=6m','h=8m');
 max_stroke = [Lleg-min(X{1}),Lleg-min(X{2}),Lleg-min(X{3}),Lleg-min(X{4})];
 save('dyn_kc.mat','X','DX','GRF','T','Tg','max_stroke')
 
+
+
+
+
+
+
+
 %  set(gcf, 'PaperPositionMode', 'manual');
 %     set(gcf, 'PaperUnits', 'inches');
 %     set(gcf, 'PaperPosition', [0.19 4.33 0.19 1.57]);  % This is the final size of the figure
