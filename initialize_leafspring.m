@@ -11,7 +11,7 @@ dx0 = 0;
 
 %%%%% Leg Parameters (Shin Part) %%%%%
 m = 8;
-Lleg = 1;
+Lleg = 0.7;  %% changed from 1
 
 %%%%% Spring props %%%%%
 Y = 80*10^9; %% young's modulus
@@ -32,7 +32,7 @@ xe = sols(1);
 for i=1:4
 
 %%% Free Fall Params %%%
-y0 = (2*i)*Lleg; % free fall height
+y0 = (2.5*i)*Lleg; % free fall height
 
 %%% Energy at Impact %%%
 v1 = sqrt(2*g*(y0-Lleg));
@@ -44,7 +44,7 @@ E = m*g*Lleg + 0.5*m*v1^2;
  
 % eta = 1; %(v1/4.42)*1.0;  %% critical damping
 % c = 2*eta*sqrt(m*k); % 
-c = 17.5;
+c = 170.5;
 
 sim('landing_control_leafspring')
 GRF{i}=grf.Data;
