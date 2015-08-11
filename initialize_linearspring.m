@@ -26,11 +26,11 @@ v1 = sqrt(2*g*(y0-Lleg));
 lx = Lleg/2;
 
 
-k = m*(v1^2 + g*Lleg)/(lx^2);
-% k = 941;
+k1 = m*(v1^2 + g*Lleg)/(lx^2);
+k = 941;
  
 eta = 1; %(v1/4.42)*1.0;  %% critical damping
-c = 2*eta*sqrt(m*k); % 
+c = 2*eta*sqrt(m*k1); % 
 % c = 173.5;
 
 sim('landing_control')
@@ -69,8 +69,8 @@ axis('tight')
 
 hL = legend('h=2m','h=4m','h=6m','h=8m');
 
-max_stroke = [Lleg-min(X{1}),Lleg-min(X{2}),Lleg-min(X{3}),Lleg-min(X{4})];
-save('dyn_kc.mat','X','DX','GRF','T','Tg','max_stroke')
+% max_stroke = [Lleg-min(X{1}),Lleg-min(X{2}),Lleg-min(X{3}),Lleg-min(X{4})];
+% save('dyn_kc.mat','X','DX','GRF','T','Tg','max_stroke')
 
 
 

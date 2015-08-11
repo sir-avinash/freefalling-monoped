@@ -10,7 +10,7 @@ dy0 = 0; %m/s
 dx0 = 0;
 
 %%%%% Leg Parameters (Shin Part) %%%%%
-m = 8;
+m = 5;
 Lleg = 0.7;  %% changed from 1
 
 %%%%% Spring props %%%%%
